@@ -1,0 +1,63 @@
+body {
+  background-image: url("../Assets/img/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: 105% auto; 
+}
+  #Login-Box-R{
+    width: 38%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+    background: #00000090 ;
+    padding: 20px 50px;
+  }
+  
+  #Login-Box-R h1{
+    color: #fff;
+  }
+  
+  #Login-Box-R .Form-R .Item-R{
+    margin-top: 15px;
+  }
+  
+  #Login-Box-R .Form-R .Item-R i{
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  #Login-Box-R .Form-R .Item-R input{
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #fff;
+  }
+  #Login-Box-R button{
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    cursor:pointer;
+    /* background: #1abc9c; */
+    /* background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); */
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+  }
+
+  #Login-Box-R .P-Error-R p{
+    color: red;
+  } 
+
+  #Login-Box-R .Redireccionar-R p .Link{
+    color: #fff;
+  }
+
+  #Login-Box-R .Redireccionar-R p{
+    color: #fff;
+  }

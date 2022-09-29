@@ -1,0 +1,236 @@
+.home_Container {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    overflow: hidden;
+    height: calc(100vh - 70px);
+    width: 100vw;
+  }
+  .users_container {
+    margin-top: 10px;
+    border-right: 2px solid var(--color-6);
+    overflow-y: auto;
+  }
+  .user_wrapper {
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-top:  2px solid white;
+    border-bottom: 2px solid  white;
+    border-left: 2px solid white;
+    background: linear-gradient(315deg, rgb(20 22 94), rgb(151 65 252 / 20%));
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  
+  
+  .user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user_detail {
+    display: flex;
+    align-items: center;
+  }
+  .user_detail h4 {
+    margin-left: 10px;
+    color: white;
+  }
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--color-4);
+  }
+  .user_status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .online {
+    background: #34eb52;
+  }
+  .offline {
+    background: red;
+  }
+  .messages_container {
+    position: relative;
+    width: 99%;
+    border-left: 4px solid white;
+  }
+  .messages_container p{
+    text-align: end;
+    margin: 1px;
+    margin-right: -1px;
+    width: 98%;
+    padding: 9px;
+    outline: none;
+    margin-top: 1px;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  .messages_container p button{
+    padding: 0px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    background: var(--color-1);
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .messages_user {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid var(--color-6);
+    color: white;
+  }
+  .no_conv {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+  }
+
+  .message_form {
+    position: fixed;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+  .message_form input {
+    width: 38.5vw;
+    margin: 0px 10px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+  }
+  .message_form .btn {
+    margin-top: auto;
+    align-items: center;
+    background-image: linear-gradient( 109.6deg,  rgba(45,116,213,1) 11.2%, rgba(121,137,212,1) 91.2% );
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 0px;
+    width: 100%;
+    height: auto;
+    padding: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+    
+  }
+
+  .message_form .btn:active,
+  .message_form .btn:hover {
+    outline: 0;
+  }
+
+  .message_form .btn span {
+    background-color: rgb(5, 6, 45);
+    padding: 16px 24px;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+  }
+
+  .message_form .btn:hover span {
+    background: none;
+  }
+
+  @media (min-width: 768px) {
+    .message_form .btn {
+      font-size: 24px;
+      min-width: 196px;
+    }
+  }
+
+
+  .messages {
+    height: calc(100vh - 200px);
+    overflow-y: auto;
+    border-bottom: 1px solid var(--color-6);
+  }
+  .message_wrapper {
+    margin-top: 5px;
+    padding: 0px 5px;
+  }
+
+  .message_wrapper p {
+    padding: 10px;
+    display: inline-block;
+    max-width: 50%;
+    text-align: left;
+    border-radius: 5px;
+  }
+  .message_wrapper small {
+    display: inline-block;
+    margin-top: 15px;
+    opacity: 0.8;
+  }
+
+  .message_wrapper.own {
+    text-align: right;
+  }
+  .yo {
+    background: #111111;
+    color: white;
+  }
+  .amigo {
+    background: #AAAAAA;
+  }
+
+  @media screen and (max-width: 767px) {
+    .home_container {
+      grid-template-columns: 2fr 3fr;
+    }
+    .message_form {
+      left: 3%;
+      right: 0;
+      bottom: 5px;
+    }
+    .message_wrapper p {
+      max-width: 75%;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .home_container {
+      grid-template-columns: 1fr 5fr;
+    }
+    .user_wrapper {
+      display: none;
+    }
+    .sm_container {
+      padding: 10px 0px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .sm_screen {
+      display: inline-block;
+    }
+    .message_form input {
+      width: 50vw;
+      margin: 0px 10px;
+    }
+    .message_form .btn {
+      margin: 0px;
+    }
+  
+    .message_wrapper p {
+      max-width: 100%;
+    }
+  }
