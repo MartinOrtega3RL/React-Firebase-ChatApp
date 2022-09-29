@@ -26,7 +26,6 @@ export function Login() {
 
   const handleSumbit = async (e) => {
     e.preventDefault();
-    console.log(user);
     try {
       await login(user.email, user.password);
 
